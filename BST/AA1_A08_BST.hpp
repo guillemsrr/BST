@@ -14,7 +14,6 @@ public:
 class BST
 {
 public:	
-	
 	BST();
 	~BST();
 	Node* Search(int key);
@@ -31,6 +30,7 @@ private:
 	void PreOrder(Node *node);
 	void InOrder(Node *node);
 	void PostOrder(Node *node);
+	void Delete( int key);
 
 
 };
@@ -63,6 +63,15 @@ Node * BST::Search(Node* node, int key) {
 void BST::Insert(int key) {
 	return Insert(&root, key);
 };
+
+void BST::Delete(int key)
+{
+	if (Exist(key))
+	{
+		Node* n = Search(key);
+		//n
+	}
+}
 
 void BST::Insert(Node** node, int key) {
 	if (*node == nullptr)
