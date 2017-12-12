@@ -2,10 +2,12 @@
 //
 
 #include "stdafx.h"
+#include "AA1_A08_BST.hpp"
 
 
 int main()
 {
+	system("pause");
     return 0;
 }
 
